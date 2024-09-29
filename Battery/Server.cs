@@ -86,6 +86,9 @@ public class Server
 			// .AddScoped<IBatteryService, BatteryService>();  //instance-per-request, AddTransient would result in the same
 			.AddSingleton<IBatteryService>(new BatteryService());   //singleton
 
+
+		builder.Logging.AddFilter("Microsoft.AspNetCore.Hosting.Diagnostics", Microsoft.Extensions.Logging.LogLevel.None);
+
 		//build the server
 		var app = builder.Build();
 
