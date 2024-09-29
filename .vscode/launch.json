@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Battery",
+            "type": "coreclr",
+            "request": "launch",           
+            "preLaunchTask": "build-Battery",
+            "program": "${workspaceFolder}/Battery/bin/Debug/net8.0/Battery.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Battery",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "User",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-User",
+            "program": "${workspaceFolder}/User/bin/Debug/net8.0/User.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/User",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Charger",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-Charger",
+            "program": "${workspaceFolder}/Charger/bin/Debug/net8.0/Charger.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Charger",
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}
